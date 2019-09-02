@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sahith Jampala\\source\\repos\\sahith\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj": {}
+    "C:\\Users\\Sahith Jampala\\source\\repos\\sahithj\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sahith Jampala\\source\\repos\\sahith\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj": {
+    "C:\\Users\\Sahith Jampala\\source\\repos\\sahithj\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sahith Jampala\\source\\repos\\sahith\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj",
+        "projectUniqueName": "C:\\Users\\Sahith Jampala\\source\\repos\\sahithj\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj",
         "projectName": "FormulaEvaluator",
-        "projectPath": "C:\\Users\\Sahith Jampala\\source\\repos\\sahith\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj",
+        "projectPath": "C:\\Users\\Sahith Jampala\\source\\repos\\sahithj\\PS1\\FormulaEvaluator\\FormulaEvaluator.csproj",
         "packagesPath": "C:\\Users\\Sahith Jampala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sahith Jampala\\source\\repos\\sahith\\PS1\\FormulaEvaluator\\obj\\",
+        "outputPath": "C:\\Users\\Sahith Jampala\\source\\repos\\sahithj\\PS1\\FormulaEvaluator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
