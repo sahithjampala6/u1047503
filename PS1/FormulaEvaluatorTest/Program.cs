@@ -8,29 +8,38 @@ using System.Collections;
 
 namespace FormulaEvaluatorTest
 {
-
+    /// <author> Sahith Jampala
+    /// 
+    /// </summary> This class contains all the methods required to build the Infix Expression Evaluator.
     public static class Evaluator
     {
         public delegate int Lookup(String v);
 
-
+        //Value and Operator stacks used to store data from expressions given.
         public static Stack<int> valueStack = new Stack<int>();
         public static Stack<String> operatorStack = new Stack<String>();
 
+        /// <summary> Actual method that takes in an expression given as well as the delegate for variables, and gives the correct output of the expression.
+        /// 
+        /// </summary>
+        /// <param name="exp"></param> expression to be evaluated.
+        /// <param name="variableEvaluator"></param> delegate used to swap given variable with its value.
+        /// <returns></returns> correct value for expression, or exception if expression is invalid.
         public static int Evaluate(String exp, Func<String, int> variableEvaluator)
         {
-
+            //expression split into an array to iterate through.
             string[] substrings = Regex.Split(exp, "(\\()|(\\))|(-)|(\\+)|(\\*)|(/)", RegexOptions.IgnorePatternWhitespace);
 
             foreach (string currentToken in substrings)
             {
+                //trims token for white space
                 String token = currentToken.Trim();
                 if (token == "" )
                   {
                     continue;
                    }
                 
-
+                    
                     if (isNumber(token))
                     {
                         processInteger(Convert.ToInt16(token));
@@ -38,7 +47,7 @@ namespace FormulaEvaluatorTest
 
                     if (isVariable(token))
                     {
-
+                        //converts variable to correct value or throws exception if said variable does not exist.
                         try { processInteger(variableEvaluator(token)); }
 
                         catch { throw new KeyNotFoundException(); }
@@ -118,6 +127,10 @@ namespace FormulaEvaluatorTest
                 }
             
         }
+        /// <summary> Helper method to prioritize multiplication or division.
+        /// 
+        /// </summary> If there are no operators in the operator stack, skips.
+        /// <param name="cvalue"></param> integer value of token.
         static void processInteger(int cvalue)
         {
             if (operatorStack.Count > 0)
@@ -136,6 +149,7 @@ namespace FormulaEvaluatorTest
                         }
                         else
                         {
+                            //if division by zero occurs, throw an exception.
                             if (cvalue == 0)
                             {
                                 throw new DivideByZeroException();
@@ -161,12 +175,21 @@ namespace FormulaEvaluatorTest
             
         }
 
+        /// <summary> Helper method which takes current token of the expression and returns whether or not it is a number value.
+        /// 
+        /// </summary>
+        /// <param name="x"></param> Current token.
+        /// <returns></returns> True if token is a number, False if it is not.
         static bool isNumber(String x)
         {
             int outcome;
             return int.TryParse(x, out outcome);
         }
 
+        /// <summary> Helper method which determines if the current token is a variable expression.
+        ///
+        /// <param name="x"></param> Current Token
+        /// <returns></returns> True if token is a variable expression, false if not.
         static bool isVariable(String x)
         {
             char[] varArray = x.ToUpper().ToCharArray();
@@ -178,11 +201,19 @@ namespace FormulaEvaluatorTest
             return false;
         }
 
+        /// <summary> Helper method which determines if current token is a '+' or '-' sign.
+        /// 
+        /// <param name="x"></param> Current token.
+        /// <returns></returns> True if it is '+' or '-', and false if not.
         static bool isPlusOrMinus(String x)
         {
             return x == "+" || x == "-";
         }
 
+        /// <summary> Helper method which adds or subtracts the two most recent values on the stack.
+        /// 
+        /// </summary> If there is less than two values on the value stack or no operators in the operator stack, this will throw an invalid operation exception.
+        /// <param name="token"></param> Current token to be evaluated.
         static void processAddOrSubtract(String token)
         {
             if (operatorStack.Count > 0)
@@ -216,6 +247,11 @@ namespace FormulaEvaluatorTest
                 }
             }
         }
+
+        /// <summary> Main method used for testing purposes and to create delegate.
+        /// 
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(String[] args)
         {
            var f = Evaluator.Evaluate("2+4 + (3-1)", s => 0);
