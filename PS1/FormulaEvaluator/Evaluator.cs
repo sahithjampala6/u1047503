@@ -15,9 +15,6 @@ namespace FormulaEvaluator
     {
         public delegate int Lookup(String v);
 
-        //Value and Operator stacks used to store data from expressions given.
-        public static Stack<int> valueStack = new Stack<int>();
-        public static Stack<String> operatorStack = new Stack<String>();
 
         /// <summary> Actual method that takes in an expression given as well as the delegate for variables, and gives the correct output of the expression.
         /// 
@@ -27,6 +24,9 @@ namespace FormulaEvaluator
         /// <returns></returns> correct value for expression, or exception if expression is invalid.
         public static int Evaluate(String exp, Func<String, int> variableEvaluator)
         {
+            //Value and Operator stacks used to store data from expressions given.
+            Stack<int> valueStack = new Stack<int>();
+            Stack<String> operatorStack = new Stack<String>();
             //expression split into an array to iterate through.
             string[] substrings = Regex.Split(exp, "(\\()|(\\))|(-)|(\\+)|(\\*)|(/)", RegexOptions.IgnorePatternWhitespace);
 
@@ -42,21 +42,24 @@ namespace FormulaEvaluator
 
                 if (isNumber(token))
                 {
-                    processInteger(Convert.ToInt16(token));
+                    processInteger(Convert.ToInt16(token), valueStack, operatorStack);
                 }
 
                 if (isVariable(token))
                 {
                     //converts variable to correct value or throws exception if said variable does not exist.
-                    try { processInteger(variableEvaluator(token)); }
+                    try
+                    {
+                        processInteger(variableEvaluator(token), valueStack, operatorStack);
+                    }
 
-                    catch { throw new KeyNotFoundException(); }
+                    catch { throw new InvalidOperationException(); }
                 }
 
 
                 if (isPlusOrMinus(token))
                 {
-                    processAddOrSubtract(token);
+                    processAddOrSubtract(token, valueStack, operatorStack);
                     operatorStack.Push(token);
                 }
 
@@ -67,9 +70,13 @@ namespace FormulaEvaluator
 
                 if (token == ")")
                 {
+                    if (!operatorStack.Contains("("))
+                    {
+                        throw new InvalidOperationException();
+                    }
                     if (isPlusOrMinus(operatorStack.Peek()))
                     {
-                        processAddOrSubtract(token);
+                        processAddOrSubtract(token, valueStack, operatorStack);
                     }
                     if (operatorStack.Peek() != "(")
                     {
@@ -92,7 +99,7 @@ namespace FormulaEvaluator
                                 }
                                 else
                                 {
-                                    result = val1 / val2;
+                                    result = val2 / val1;
                                 }
                             }
                             catch
@@ -104,34 +111,34 @@ namespace FormulaEvaluator
                     }
                 }
             }
-
-            if (isPlusOrMinus(operatorStack.Peek()))
+            if (operatorStack.Count > 0)
             {
-                int val1 = valueStack.Pop();
-                int val2 = valueStack.Pop();
-                String tempOp = operatorStack.Pop();
+                if (isPlusOrMinus(operatorStack.Peek()))
+                {
+                    int val1 = valueStack.Pop();
+                    int val2 = valueStack.Pop();
+                    String tempOp = operatorStack.Pop();
 
-                if (tempOp == "+")
-                {
-                    return val1 + val2;
-                }
-                else
-                {
-                    return val2 - val1;
+                    if (tempOp == "+")
+                    {
+                        return val1 + val2;
+                    }
+                    else
+                    {
+                        return val2 - val1;
+                    }
                 }
 
             }
-            else
-            {
-                return valueStack.Pop();
-            }
+
+            return valueStack.Pop();
 
         }
         /// <summary> Helper method to prioritize multiplication or division.
         /// 
         /// </summary> If there are no operators in the operator stack, skips.
         /// <param name="cvalue"></param> integer value of token.
-        static void processInteger(int cvalue)
+        static void processInteger(int cvalue, Stack<int> valueStack, Stack<String> operatorStack)
         {
             if (operatorStack.Count > 0)
             {
@@ -152,7 +159,7 @@ namespace FormulaEvaluator
                             //if division by zero occurs, throw an exception.
                             if (cvalue == 0)
                             {
-                                throw new DivideByZeroException();
+                                throw new InvalidOperationException();
                             }
 
                             tempResult = tempVal / cvalue;
@@ -215,7 +222,7 @@ namespace FormulaEvaluator
         /// 
         /// </summary> If there is less than two values on the value stack or no operators in the operator stack, this will throw an invalid operation exception.
         /// <param name="token"></param> Current token to be evaluated.
-        static void processAddOrSubtract(String token)
+        static void processAddOrSubtract(String token, Stack<int> valueStack, Stack<String> operatorStack)
         {
             if (operatorStack.Count > 0)
             {
@@ -255,8 +262,8 @@ namespace FormulaEvaluator
         /// <param name="args"></param>
         public static void Main(String[] args)
         {
-            var f = Evaluator.Evaluate("2+4 + (3-1)", s => 0);
-            Console.WriteLine(f);
+            //var f = Evaluator.Evaluate("(20 / 4)", s => 0);
+            //Console.WriteLine(f);
         }
 
     }
