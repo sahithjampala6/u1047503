@@ -1,0 +1,8 @@
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.deps.json
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.csprojAssemblyReference.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.csproj.CoreCompileInputs.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.AssemblyInfoInputs.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.AssemblyInfo.cs
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.csproj.CopyComplete
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluator\Debug\netstandard2.0\FormulaEvaluator.dll

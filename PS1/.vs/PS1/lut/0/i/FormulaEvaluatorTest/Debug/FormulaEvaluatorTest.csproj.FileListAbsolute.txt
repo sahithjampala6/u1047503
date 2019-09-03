@@ -1,0 +1,6 @@
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\FormulaEvaluatorTest\bin\Debug\FormulaEvaluatorTest.exe.config
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\FormulaEvaluatorTest\bin\Debug\FormulaEvaluatorTest.exe
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluatorTest\Debug\FormulaEvaluatorTest.csproj.CoreCompileInputs.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluatorTest\Debug\FormulaEvaluatorTest.csproj.CopyComplete
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluatorTest\Debug\FormulaEvaluatorTest.exe
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\FormulaEvaluatorTest\Debug\FormulaEvaluatorTest.csprojAssemblyReference.cache

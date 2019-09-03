@@ -1,0 +1,8 @@
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\b\PS1UnitTest\bin\Debug\PS1UnitTest.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\PS1UnitTest\Debug\PS1UnitTest.csprojAssemblyReference.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\PS1UnitTest\Debug\PS1UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\PS1UnitTest\Debug\PS1UnitTest.csproj.CopyComplete
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\.vs\PS1\lut\0\i\PS1UnitTest\Debug\PS1UnitTest.dll

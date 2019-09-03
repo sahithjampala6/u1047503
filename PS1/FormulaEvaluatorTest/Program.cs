@@ -108,7 +108,7 @@ namespace FormulaEvaluatorTest
                     }
                     else
                     {
-                        return val1 - val2;
+                        return val2 - val1;
                     }
 
                 }
@@ -204,7 +204,7 @@ namespace FormulaEvaluatorTest
                         }
                         else
                         {
-                            result = val1 - val2;
+                            result = val2 - val1;
                         }
                         valueStack.Push(result);
 
@@ -216,36 +216,13 @@ namespace FormulaEvaluatorTest
                 }
             }
         }
-            public static void Main(String[] args)
-            {
-                var f = Evaluator.Evaluate("4 + (2 * 3 + 2) + X", s => 1);
+        public static void Main(String[] args)
+        {
+           var f = Evaluator.Evaluate("2+4 + (3-1)", s => 0);
             Console.WriteLine(f);
-            }
-
         }
 
-
-        //public static class LookupClass
-        //{
-
-        //    public static int LookupMethod(String v)
-        //    {
-        //        int result1=0;
-
-        //        Dictionary<String, int> varLookup = new Dictionary<String, int>();
-        //        varLookup.Add("A1", 1);
-        //        varLookup.Add("A2", 2);
-        //        varLookup.Add("A3", 3);
-        //        int valueInt;
-
-        //        if (varLookup.TryGetValue(v, out valueInt))
-        //        {
-        //            result1 = valueInt;
-        //        }
-        //        return result1;
-        //        //throw new ArgumentException();
-        //    }   
-        //}
+    }
 
     }
     
