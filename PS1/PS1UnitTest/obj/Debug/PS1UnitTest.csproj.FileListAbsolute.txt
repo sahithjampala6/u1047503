@@ -3,11 +3,8 @@ C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\Microsoft
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\PS1UnitTest.dll
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\PS1UnitTest.pdb
-C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\FormulaEvaluatorTest.exe
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\FormulaEvaluatorTest.pdb
-C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\FormulaEvaluatorTest.exe.config
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\obj\Debug\PS1UnitTest.csprojAssemblyReference.cache
@@ -15,3 +12,5 @@ C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\obj\Debug\PS1UnitTe
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\obj\Debug\PS1UnitTest.csproj.CopyComplete
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\obj\Debug\PS1UnitTest.dll
 C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\obj\Debug\PS1UnitTest.pdb
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\FormulaEvaluator.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\PS1UnitTest\bin\Debug\FormulaEvaluator.pdb

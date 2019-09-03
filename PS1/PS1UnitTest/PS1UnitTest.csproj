@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FormulaEvaluatorTest\FormulaEvaluatorTest.csproj">
-      <Project>{19e485fd-f4d1-405d-ae6e-fddee8f6e4c0}</Project>
-      <Name>FormulaEvaluatorTest</Name>
+    <ProjectReference Include="..\FormulaEvaluator\FormulaEvaluator.csproj">
+      <Project>{630507b8-8ca8-45ff-b428-6c5c3b8013f5}</Project>
+      <Name>FormulaEvaluator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
