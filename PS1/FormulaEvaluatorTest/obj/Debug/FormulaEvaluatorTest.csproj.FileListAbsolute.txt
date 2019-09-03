@@ -1,0 +1,10 @@
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Debug\FormulaEvaluatorTest.csprojAssemblyReference.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Debug\FormulaEvaluatorTest.csproj.CoreCompileInputs.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Debug\FormulaEvaluatorTest.exe.config
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Debug\FormulaEvaluatorTest.exe
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Debug\FormulaEvaluatorTest.pdb
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Debug\FormulaEvaluator.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Debug\FormulaEvaluator.pdb
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Debug\FormulaEvaluatorTest.csproj.CopyComplete
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Debug\FormulaEvaluatorTest.exe
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Debug\FormulaEvaluatorTest.pdb

@@ -1,0 +1,10 @@
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Release\FormulaEvaluatorTest.exe.config
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Release\FormulaEvaluatorTest.exe
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Release\FormulaEvaluatorTest.pdb
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Release\FormulaEvaluator.dll
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\bin\Release\FormulaEvaluator.pdb
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Release\FormulaEvaluatorTest.csprojAssemblyReference.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Release\FormulaEvaluatorTest.csproj.CoreCompileInputs.cache
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Release\FormulaEvaluatorTest.csproj.CopyComplete
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Release\FormulaEvaluatorTest.exe
+C:\Users\Sahith Jampala\source\repos\sahithj\PS1\FormulaEvaluatorTest\obj\Release\FormulaEvaluatorTest.pdb
